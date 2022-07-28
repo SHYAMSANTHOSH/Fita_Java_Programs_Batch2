@@ -6,14 +6,22 @@ public class LocalVariable {
 		// TODO Auto-generated method stub
 		
 		LocalVariable loc = new LocalVariable();
-		loc.display();
+		int num = loc.display();
 		int mark = 35;
 		System.out.println(mark);
 	}
 	
-	public void display() {
+	 protected int displayProtected() {
 		int value = 100;
-		System.out.print(value);
+		System.out.println(value);
+		return value;
 	}
+	 
+	  public int display() {
+			int value = 100;
+			System.out.println(value);
+			return value;
+		}
+
 
 }
