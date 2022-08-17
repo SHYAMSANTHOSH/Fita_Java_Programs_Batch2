@@ -10,13 +10,13 @@ public class StringExample {
 		System.out.println(name);
 		
 		String city = "COIMBATORE";
-		String city1 = new String("COIMBATORE");
+		String city1 = new String("COIMBATORE").intern();
 		String city2 = "COIMBATORE";
 		String city3 = new String("COIMBATORE");
 		String city4 = new String(city2);
 		
 		System.out.println(city == city2);
-		System.out.println(city == city1);
+		System.out.println(city == city1); // true
 		System.out.println(city == city4);
 		System.out.println(city3 == city4);
 		System.out.println(city.equals(city2));
